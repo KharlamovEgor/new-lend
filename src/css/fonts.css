@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Steppe";
+  font-weight: 400;
+  src: url("../fonts/Steppe-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Steppe";
+  font-weight: 500;
+  src: url("../fonts/Steppe-Medium.woff2");
+}
+
+@font-face {
+  font-family: "Steppe";
+  font-weight: 600;
+  src: url("../fonts/Steppe-SemiBold.woff2");
+}
+
+@font-face {
+  font-family: "Steppe";
+  font-weight: 700;
+  src: url("../fonts/Steppe-Bold.woff2");
+}
+
+@font-face {
+  font-family: "Steppe";
+  font-weight: 900;
+  src: url("../fonts/Steppe-Black.woff2");
+}
