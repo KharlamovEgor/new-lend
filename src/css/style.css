@@ -14,6 +14,7 @@ html {
 
 body {
   font-family: "Steppe", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -248,7 +249,7 @@ body {
   font-weight: 900;
 
   @media (max-width: 45em) {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -506,19 +507,6 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-}
-
-.stack__grid-row1 p:first-child::after {
-  content: "";
-  background-color: var(--light-color);
-  position: absolute;
-  width: 3em;
-  height: 5px;
-  left: 50%;
-  transform: translate(-50%);
-  border-radius: 29px;
-
-  top: 2.7em;
 }
 
 .stack__grid {
@@ -828,6 +816,9 @@ body {
 
 .project img {
   max-height: 287px;
+  border-radius: 35px;
+  border: 5px solid var(--primary-color);
+  object-fit: cover;
 }
 
 /* Price */
