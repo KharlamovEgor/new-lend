@@ -34,35 +34,32 @@ function makeObserver(element, animation) {
 
 makeObserver(
   document.querySelector(".advantages__grid img"),
-  "animate__fadeInLeft",
+  "animate__fadeIn",
 );
 makeObserver(
   document.querySelector(".advantages__grid-obj"),
-  "animate__fadeInRight",
+  "animate__fadeIn",
 );
 makeObserver(
   Array.from(document.querySelectorAll(".service__number")),
-  "animate__fadeInLeft",
+  "animate__fadeIn",
 );
 makeObserver(
   Array.from(document.querySelectorAll(".service img")),
-  "animate__fadeInRight",
+  "animate__fadeIn",
 );
 makeObserver(
   Array.from(document.querySelectorAll(".stack__grid p")),
-  "animate__fadeInDown",
+  "animate__fadeIn",
 );
-makeObserver(document.querySelector(".solution img"), "animate__fadeInLeft");
-makeObserver(document.querySelector(".solution p"), "animate__fadeInRight");
-makeObserver(
-  document.querySelector(".possibilities img"),
-  "animate__fadeInDown",
-);
-makeObserver(document.querySelector(".possibilities p"), "animate__fadeInUp");
-makeObserver(document.querySelector(".possibilities p"), "animate__fadeInUp");
+makeObserver(document.querySelector(".solution img"), "animate__fadeIn");
+makeObserver(document.querySelector(".solution p"), "animate__fadeIn");
+makeObserver(document.querySelector(".possibilities img"), "animate__fadeIn");
+makeObserver(document.querySelector(".possibilities p"), "animate__fadeIn");
+makeObserver(document.querySelector(".possibilities p"), "animate__fadeIn");
 makeObserver(
   Array.from(document.querySelectorAll(".project p")),
-  "animate__fadeInLeft",
+  "animate__fadeIn",
 );
-makeObserver(document.querySelector(".project img"), "animate__fadeInRight");
-makeObserver(document.querySelector(".price h3"), "animate__fadeInLeft");
+makeObserver(document.querySelector(".project img"), "animate__fadeIn");
+makeObserver(document.querySelector(".price h3"), "animate__fadeIn");
