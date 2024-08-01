@@ -1,14 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <title>My First Parcel App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Principle Soft</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script type="module" src="./js/app.js"></script>
   </head>
-  <body>
+  <body id="main">
     <header class="header">
       <nav class="nav">
         <div class="nav__container container">
@@ -16,12 +18,33 @@
             <img class="logo__img" src="../src/images/лого.png" alt="" />
             <h1>ПРИНЦИП СОФТ</h1>
           </div>
+          <button class="mobile-menu-button">
+            <svg viewBox="0 0 100 80" width="40" height="40" fill="white">
+              <rect width="100" height="20" rx="10"></rect>
+              <rect y="30" width="100" height="20" rx="10"></rect>
+              <rect y="60" width="100" height="20" rx="10"></rect>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button>&times;</button>
+            <ul class="mobile-menu__links">
+              <li class="mobile-menu__item"><a href="#main">Главная</a></li>
+              <li class="mobile-menu__item"><a href="#about">О нас</a></li>
+              <li class="mobile-menu__item">
+                <a href="#advantages">Преимущества</a>
+              </li>
+              <li class="mobile-menu__item"><a href="#services">Услуги</a></li>
+              <li class="mobile-menu__item">
+                <a href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </div>
           <ul class="menu">
-            <li class="menu__item"><a href="#">Главная</a></li>
-            <li class="menu__item"><a href="#">О нас</a></li>
-            <li class="menu__item"><a href="#">Преимущества</a></li>
-            <li class="menu__item"><a href="#">Услуги</a></li>
-            <li class="menu__item"><a href="#">Контакты</a></li>
+            <li class="menu__item"><a href="#main">Главная</a></li>
+            <li class="menu__item"><a href="#about">О нас</a></li>
+            <li class="menu__item"><a href="#advantages">Преимущества</a></li>
+            <li class="menu__item"><a href="#services">Услуги</a></li>
+            <li class="menu__item"><a href="#contacts">Контакты</a></li>
           </ul>
         </div>
       </nav>
@@ -35,19 +58,20 @@
         </p>
       </div>
     </header>
-    <div class="advantages">
+    <div class="advantages" id="advantages">
       <div class="advantages__container">
-        <h2>Наши преимущества</h2>
-        <h2>
+        <h2 class="advantages__heading">Наши преимущества</h2>
+        <h2 class="advantages__subheading">
           Наша команда отличается высокой степенью вовлеченности и преданности
           делу
         </h2>
         <div class="advantages__grid">
           <img src="./images/adv.png" alt="" />
           <div class="advantages__grid-obj">
-            <p>ПРИНЦИП СОФТ профессиональный коллектив опытных специалистов</p>
+            <h3>
+              ПРИНЦИП СОФТ профессиональный коллектив опытных специалистов
+            </h3>
             <p>
-              <br />
               Мы постоянно совершенствуем свои навыки, что позволяет нам быть в
               курсе последних тенденций и трендов в сфере мобильной разработки
             </p>
@@ -55,15 +79,17 @@
         </div>
       </div>
     </div>
-    <div class="services">
+    <div class="services" id="services">
       <div class="services__container">
-        <h2 class="services-header">Услуги</h2>
+        <h2 class="services-heading">Услуги</h2>
         <div class="services__grid">
           <div class="service">
-            <h2 class="service__number"><span>1</span></h2>
-            <div class="service-text">
-              <p>Приложения для<br />iOS и Android</p>
-              <p>
+            <div>
+              <h2 class="service__number"><span>1</span></h2>
+              <h3 class="service__heading">
+                Приложения для<br />iOS и Android
+              </h3>
+              <p class="service__text">
                 Мы разрабатываем приложения для iOS и Android с использованием
                 передовых технологий и лучших практик в индустрии
               </p>
@@ -71,26 +97,30 @@
             <img src="images/Rectangle 26.png" alt="" />
           </div>
           <div class="service">
-            <h2 class="service__number"><span>2</span></h2>
-            <div class="service-text">
-              <p>Создание уникальных интерфейсов</p>
-              <p>
-                Наша команда специалистов владеет опытом в создании уникальных
-                пользовательских интерфейсов, высокой производительности и
-                безопасности приложений
-              </p>
+            <div>
+              <h2 class="service__number"><span>2</span></h2>
+              <h3 class="service__heading">Создание уникальных интерфейсов</h3>
+              <div class="service__text">
+                <p>
+                  Наша команда специалистов владеет опытом в создании уникальных
+                  пользовательских интерфейсов, высокой производительности и
+                  безопасности приложений
+                </p>
+              </div>
             </div>
             <img src="images/Rectangle 29.png" alt="" />
           </div>
           <div class="service">
-            <h2 class="service__number"><span>3</span></h2>
-            <div class="service-text">
-              <p>Консультации</p>
-              <p>
-                Мы также предлагаем консультации по оптимизации приложений и их
-                продвижению в маркетплейсах для максимальной видимости и
-                успешности
-              </p>
+            <div>
+              <h2 class="service__number"><span>3</span></h2>
+              <h3 class="service__heading">Консультации</h3>
+              <div class="service__text">
+                <p>
+                  Мы также предлагаем консультации по оптимизации приложений и
+                  их продвижению в маркетплейсах для максимальной видимости и
+                  успешности
+                </p>
+              </div>
             </div>
             <img src="images/Rectangle 29 (1).png" alt="" />
           </div>
@@ -101,7 +131,7 @@
         </h2>
       </div>
     </div>
-    <div class="stack">
+    <div class="stack" id="about">
       <div class="stack__container">
         <h2>Стек технологий</h2>
         <div class="stack__grid">
@@ -184,7 +214,7 @@
           гибкую систему ценообразования, которая позволяет нам учитывать
           специфику и потребности каждого клиента
         </h3>
-        <p>
+        <p id="contacts">
           Юридический адрес 197374, Г.САНКТ-ПЕТЕРБУРГ, ВН.ТЕР.Г.<br />
           МУНИЦИПАЛЬНЫЙ ОКРУГ № 65, ПР-КТ ПРИМОРСКИЙ, Д. 78, К. 5, СТР. 1,<br />
           ПОМЕЩ. 1Н, ОФИС 1/8<br />  ИНН 7814837658<br />  КПП 781401001<br />
