@@ -4,6 +4,7 @@
   --dark-color: #000000;
   --background-color: #e1ebff;
   --stack-color: #90bcff;
+  --animate-duration: 1500ms;
   font-size: 16px;
 }
 
